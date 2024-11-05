@@ -1,0 +1,8 @@
+@id("description")
+permit
+(
+ principal is MyStore::User::"Jans::Workload",
+ action in [MyStore::Action::"PUT"],
+ resource == MyStore::Application::"Jans::Issue"
+)
+;
